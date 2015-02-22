@@ -1,21 +1,22 @@
 Code Book: Getting and Cleaning Data - Course Project
 ==========================================
 
-## Raw dataset information
+# Raw dataset information
 This following dataset [Human Activity Recognition Using Smartphones Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) was used to prepare tidy data that can be used for later analysis. 
-#Features in the raw dataset
+
+##Features in the raw dataset
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals timeAccelerometer-XYZ and timeGyroscope-XYZ. These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (timeBodyAccelerometer-XYZ and timeGravityAccelerometer-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (timeBodyAccelerometerJerk-XYZ and timeBodyGyroscopeJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (timeBodyAccelerometerMagnitude, timeGravityAccelerometerMagnitude, timeBodyAccelerometerJerkMagnitude, timeBodyGyroscopeMagnitude, timeBodyGyroscopeJerkMagnitude). 
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequencyBodyAccelerometer-XYZ, frequencyBodyAccelerometerJerk-XYZ, frequencyBodyGyroscope-XYZ, frequencyBodyAccelerometerJerkMagnitude, frequencyBodyGyroscopeMagnitude, frequencyBodyGyroscopeJerkMagnitude.
-These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequencyBodyAccelerometer-XYZ, frequencyBodyAccelerometerJerk-XYZ, frequencyBodyGyroscope-XYZ, frequencyBodyAccelerometerJerkMagnitude, frequencyBodyGyroscopeMagnitude, frequencyBodyGyroscopeJerkMagnitude. These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. 
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-gravityMean
-timeBodyAccelerometerMean
-timeBodyAccelerometerJerkMean
-timeBodyGyroscopeMean
-timeBodyGyroscopeJerkMean
+* gravityMean
+* timeBodyAccelerometerMean
+* timeBodyAccelerometerJerkMean
+* timeBodyGyroscopeMean
+* timeBodyGyroscopeJerkMean
 
 For each record it is provided:
 -------------------------------------
@@ -27,7 +28,7 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 
-## Transformations on the raw data
+# Transformations on the raw data
 The script `run_analysis.R` performs a series of steps as outlined in the course project page to transform the raw dataset in to a tidy, independent dataset. The steps perfomed are as follows:
 * The test and the train datasets were combined using the `rbind()` function. 
 * Only those features were selected from the raw dataset which contain measurements about either mean or standard deviation of quantities. 
@@ -37,7 +38,7 @@ The script `run_analysis.R` performs a series of steps as outlined in the course
 * The tidy dataset, which conforms to the tidy data principles taught in Week 1 of the course, was stored in the file `tidy_data_set.txt`.
 
 
-## Variables in the tidy data set 
+# Variables in the tidy data set 
 The following 88 columns are there in the tidy data set called `tidy_data_set.txt`: 
 * activity
 * subject_identifier

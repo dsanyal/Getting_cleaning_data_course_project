@@ -8,12 +8,11 @@ This following dataset [Human Activity Recognition Using Smartphones Dataset](ht
 ## Files in this repo
 For performing the analysis on the raw data sets provided, the working directory was set to `UCI HAR Dataset`, after unzipping the zipped datafile. 
 *  The repo contains a code book called `CodeBook.md` that describes the variables, the data, and the transformations that were performed.
-*   The file `run_analysis.R` contains the code which 
+*   The file `run_analysis.R` contains the code (appropriately commented to guide the user through the steps performed in creating the tidy dataset) which 
 	+ merges the training and the test datasets,
 	+ extracts only the measurements on the mean and standard deviation for each measurement, 
 	+ labels the data set with descriptive variable names, 
 	+ and creates a tidy data set called `tidy_data_set.txt` with the average of each variable for each activity and each subject.
-The file is appropriately commented to guide the user through the steps performed in creating the tidy dataset.
 *   `README.rmd` (this file)  
 
 

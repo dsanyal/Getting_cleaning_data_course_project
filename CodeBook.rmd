@@ -27,6 +27,7 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
+*Please note* that all the features are normalized and bounded within [-1,1].
 
 # Transformations on the raw data
 The script `run_analysis.R` performs a series of steps as outlined in the course project page to transform the raw dataset in to a tidy, independent dataset. The steps perfomed are as follows:

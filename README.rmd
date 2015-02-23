@@ -2,11 +2,11 @@ Getting and Cleaning Data - Course Project
 ==========================================
 
 ## Overview
-This following dataset [Human Activity Recognition Using Smartphones Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) was used to prepare tidy data that can be used for later analysis. This repo contains the necessary R script and the code book to prepare the tidy dataset.
+This following dataset [Human Activity Recognition Using Smartphones Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) was used to prepare tidy data that can be used for later analysis. This repo contains the necessary R script and the code book to prepare the tidy dataset. The tidy dataset is a wide-format dataset where each column contains a unique variable and each row contains exactly one averaged record.
 
 
 ## Files in this repo
-For performing the analysis on the raw data sets provided, the working directory was set to `UCI HAR Dataset`, after unzipping the zipped datafile. 
+For performing the analysis on the raw data sets provided, the working directory was set to `UCI HAR Dataset`, after unzipping the zipped data. 
 *  The repo contains a code book called `CodeBook.md` that describes the variables, the data, and the transformations that were performed.
 *   The file `run_analysis.R` contains the code (appropriately commented to guide the user through the steps performed in creating the tidy dataset) which 
 	+ merges the training and the test datasets,
